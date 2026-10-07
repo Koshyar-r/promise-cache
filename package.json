@@ -1,0 +1,35 @@
+{
+  "name": "promise-cache",
+  "version": "0.1.0",
+  "description": "Deduplicate concurrent async operations and cache their results.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "promise",
+    "cache",
+    "async",
+    "deduplication",
+    "typescript"
+  ],
+  "author": "Kushyar",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}
