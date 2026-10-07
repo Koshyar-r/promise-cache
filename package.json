@@ -24,12 +24,15 @@
     "cache",
     "async",
     "deduplication",
-    "typescript"
+    "typescript",
+    "async-cache",
+    "request-deduplication"
   ],
   "author": "Kushyar",
   "license": "MIT",
+  "sideEffects": false,
   "devDependencies": {
-    "typescript": "^5.9.3",
-    "vitest": "^3.2.7"
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
   }
 }

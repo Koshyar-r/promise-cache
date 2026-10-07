@@ -2,4 +2,4 @@ export {
   promiseCache,
   type CachedFunction,
   type PromiseCacheOptions,
-} from "./promise-cache"
+} from "./promise-cache.js"
