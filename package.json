@@ -1,5 +1,5 @@
 {
-  "name": "promise-cache",
+  "name": "promise-cache-lite",
   "version": "0.1.0",
   "description": "Deduplicate concurrent async operations and cache their results.",
   "type": "module",

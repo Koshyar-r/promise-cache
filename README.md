@@ -1,21 +1,21 @@
-# promise-cache
+# promise-cache-lite
 
 Deduplicate concurrent async operations and cache their results.
 
-`promise-cache` prevents duplicate async calls by sharing the same Promise between concurrent requests. It can also cache resolved results for a configurable amount of time.
+`promise-cache-lite` prevents duplicate async calls by sharing the same Promise between concurrent requests. It can also cache resolved results for a configurable amount of time.
 
 Zero dependencies. TypeScript-first. Works in Node.js and the browser.
 
 ## Installation
 
 ```bash
-npm install promise-cache
+npm install promise-cache-lite
 ```
 
 ## Basic Usage
 
 ```ts
-import { promiseCache } from "promise-cache"
+import { promiseCache } from "promise-cache-lite"
 
 const getUser = promiseCache(async (id: number) => {
   const response = await fetch(`/api/users/${id}`)
@@ -128,7 +128,7 @@ The next call can try the operation again.
 
 ## TypeScript
 
-`promise-cache` is written in TypeScript and provides type-safe arguments and return values.
+`promise-cache-lite` is written in TypeScript and provides type-safe arguments and return values.
 
 ```ts
 const getUser = promiseCache(
@@ -169,7 +169,7 @@ The returned function has the following methods:
 | `cached.delete(...args)` | Remove a specific cached entry                     |
 | `cached.has(...args)`    | Check whether an entry is cached                   |
 
-## Why promise-cache?
+## Why promise-cache-lite?
 
 Async operations are often triggered multiple times before the first request finishes.
 
@@ -181,7 +181,7 @@ Request B ──→ API
 Request C ──→ API
 ```
 
-With `promise-cache`:
+With `promise-cache-lite`:
 
 ```text
 Request A ─┐
